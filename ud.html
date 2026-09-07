@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="ud.css">
+</head>
+<body>
+
+  <div class="card">
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="City ka naam likhein..." spellcheck="false">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="error" id="errorMsg">
+      <p>Invalid City Name!</p>
+    </div>
+
+    <div class="weather" id="weatherInfo">
+      <h1 class="temp" id="temp">--°C</h1>
+      <h2 class="city" id="cityName">--</h2>
+      
+      <div class="details">
+        <div class="col">
+          <div>
+            <p class="humidity" id="humidity">--%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <p class="wind" id="wind">-- km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="ud.js"></script>
+</body>
+</html>
